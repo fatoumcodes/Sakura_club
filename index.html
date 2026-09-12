@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>SAKURA CLUB ♡ 桜の世界へ</title>
+
+<link href="./output.css" rel="stylesheet">
+
+
+</head>
+
+<body class="min-h-screen bg-cover bg-center" style="background-image: url('your-image.jpg')">
+
+
+<main>
+
+    <section id="mood" class="fixed w-72 bg-rose-300/70 rounded-3xl shadow-lg p-6 z-50">
+
+        <h1>SAKURA CLUB ♡</h1>
+
+        <p>桜の世界へ 🌸</p>
+
+        <h2>Choose your mood ♡</h2>
+
+        <p>How are you feeling today?</p>
+
+    <div class="moods grid grid-cols-2 gap-3">
+        
+        <button data-mood="happy" class="bg-pink-200 hover:bg-pink-300 rounded-xl py-3 text-sm font-medium">💗 Happy</button>
+        
+        <button data-mood="calm" class="bg-pink-200 hover:bg-pink-300 rounded-xl py-3 text-sm font-medium">🌙 Calm</button>
+        
+        <button data-mood="tired" class="bg-pink-200 hover:bg-pink-300 rounded-xl py-3 text-sm font-medium">🍓 Tired</button>
+        
+        <button data-mood="dreamy" class="bg-pink-200 hover:bg-pink-300 rounded-xl py-3 text-sm font-medium">🦋 Dreamy</button>
+        
+        <button data-mood="nostalgic" class="bg-pink-200 hover:bg-pink-300 rounded-xl py-3 text-sm font-medium col-span-2">💿 Nostalgic</button>
+   
+    </div>
+
+        <div id="result">
+
+            <p>Your Sakura saying 🌸</p>
+
+            <p id="japanese">Choose a mood</p>
+
+            <p id="meaning">Your Japanese saying will appear here.</p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
