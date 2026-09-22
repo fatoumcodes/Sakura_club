@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="w-screen h-screen m-0 bg-cover bg-center" style="background-image: url('your-image.jpg')">
+<body class="w-screen h-screen m-0 rounded-3x1 overflow-hidden" style="background-image: url('your-image.jpg')">
 
 <main>
 
@@ -21,7 +21,7 @@
 
         <div id="petals"></div>
 
-        <header class="text-center mb-4">
+        <header class=" draggable text-center mb-4">
 
             <h1 class="text-2xl font-serif font-bold tracking-wide">
                 SAKURA CLUB ♡
@@ -37,8 +37,7 @@
 
         </header>
 
-
-        <section class="text-center mb-4">
+        <section class="text-center">
 
             <p class="text-xs uppercase tracking-widest opacity-70">
                 Today
@@ -46,22 +45,26 @@
 
             <p id="date" class="font-serif text-lg">
             </p>
+            
+            <p id="time" class="font-serif text-sm"></p>
 
         </section>
-
 
         <section class="bg-[#F8F1E7]/80 rounded-2xl p-3 mb-4 text-center">
 
             <p class="text-xs uppercase tracking-widest opacity-70 mb-1">
-                Japanese saying 🎋
+             🎋
             </p>
 
-            <p id="meaning" class="font-serif italic text-sm">
-                Your Japanese saying will appear here.
+            <p id="meaning" class="font-serif text-lg">
+                一期一会
+            </p>
+
+            <p class="font-serif italic text-sm mt-1">
+                One life, one encounter.
             </p>
 
         </section>
-
 
         <section class="text-center">
 
@@ -73,10 +76,10 @@
                 25:00
             </p>
 
-        <button id="timer-button"
-            class="bg-[#6B5878] text-[#F8F1E7] px-5 py-2 rounded-full text-sm hover:opacity-90">
-            Start
-        </button>
+            <button id="timer-button"
+                class="bg-[#6B5878] text-[#F8F1E7] px-5 py-2 rounded-full text-sm hover:opacity-90">
+                Start
+            </button>
 
         </section>
 

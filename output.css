@@ -230,6 +230,9 @@
   .w-screen {
     width: 100vw;
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -242,16 +245,46 @@
   .bg-\[\#6B5878\] {
     background-color: #6B5878;
   }
-  .bg-\[\#294936\] {
-    background-color: #294936;
-  }
   .bg-\[\#F8F1E7\]\/80 {
     background-color: color-mix(in oklab, #F8F1E7 80%, transparent);
+  }
+  .bg-rose-300 {
+    background-color: var(--color-rose-300);
+  }
+  .bg-rose-300\/2 {
+    background-color: color-mix(in srgb, oklch(81% 0.117 11.638) 2%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-rose-300) 2%, transparent);
+    }
+  }
+  .bg-rose-300\/20 {
+    background-color: color-mix(in srgb, oklch(81% 0.117 11.638) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-rose-300) 20%, transparent);
+    }
+  }
+  .bg-rose-300\/50 {
+    background-color: color-mix(in srgb, oklch(81% 0.117 11.638) 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-rose-300) 50%, transparent);
+    }
   }
   .bg-rose-300\/70 {
     background-color: color-mix(in srgb, oklch(81% 0.117 11.638) 70%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-rose-300) 70%, transparent);
+    }
+  }
+  .bg-rose-300\/80 {
+    background-color: color-mix(in srgb, oklch(81% 0.117 11.638) 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-rose-300) 80%, transparent);
+    }
+  }
+  .bg-rose-300\/90 {
+    background-color: color-mix(in srgb, oklch(81% 0.117 11.638) 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-rose-300) 90%, transparent);
     }
   }
   .bg-cover {
@@ -274,6 +307,15 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .pb-3 {
+    padding-bottom: calc(var(--spacing) * 3);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
   }
   .text-center {
     text-align: center;
@@ -315,9 +357,6 @@
   }
   .text-\[\#6B5878\] {
     color: #6B5878;
-  }
-  .text-\[\#294936\] {
-    color: #294936;
   }
   .text-\[\#F8F1E7\] {
     color: #F8F1E7;
@@ -368,6 +407,9 @@
   100% {
     transform: translateY(450px) translateX(-15px) rotate(360deg);
   }
+}
+.draggable {
+  -webkit-app-region: drag;
 }
 @property --tw-font-weight {
   syntax: "*";

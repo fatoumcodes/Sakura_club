@@ -2,6 +2,37 @@ const widget = document.getElementById('sakura-widget');
 const timer = document.getElementById('timer');
 const button = document.getElementById('timer-button');
 
+const date = document.getElementById('date');
+const time = document.getElementById('time');
+
+
+
+function updateDateTime() {
+
+    const now = new Date();
+
+    const dateOptions = {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+    };
+
+    const timeOptions = {
+        hour: 'numeric',
+        minute: '2-digit',
+        second: '2-digit'
+    };
+
+    date.textContent = now.toLocaleDateString('en-GB', dateOptions);
+    time.textContent = now.toLocaleTimeString('en-GB', timeOptions);
+}
+
+updateDateTime();
+
+setInterval(updateDateTime, 1000);
+
+
+
 let timeLeft = 1500;
 let timerInterval = null;
 
@@ -31,6 +62,8 @@ button.addEventListener('click', () => {
 
     }, 1000);
 });
+
+
 
 const petals = document.getElementById("petals");
 

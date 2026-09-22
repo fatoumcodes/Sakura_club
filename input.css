@@ -31,3 +31,6 @@
         transform: translateY(450px) translateX(-15px) rotate(360deg);
     }
 }
+.draggable {
+-webkit-app-region: drag;
+}
