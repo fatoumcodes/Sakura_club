@@ -1,1 +1,33 @@
 @import "tailwindcss";
+#petals {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.petal {
+    position: absolute;
+    top: -20px;
+    width: 10px;
+    height: 14px;
+    background: #f7b6c8;
+    border-radius: 100% 0 100% 0;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-20px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(220px) translateX(15px) rotate(180deg);
+    }
+
+    100% {
+        transform: translateY(450px) translateX(-15px) rotate(360deg);
+    }
+}

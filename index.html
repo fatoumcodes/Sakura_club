@@ -6,48 +6,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>SAKURA CLUB ♡ 桜の世界へ</title>
 
-<title>SAKURA CLUB ♡ 桜の世界へ</title>
-
-<link href="./output.css" rel="stylesheet">
-
+    <link href="./output.css" rel="stylesheet">
 
 </head>
 
-<body class="min-h-screen bg-cover bg-center" style="background-image: url('your-image.jpg')">
-
+<body class="w-screen h-screen m-0 bg-cover bg-center" style="background-image: url('your-image.jpg')">
 
 <main>
 
-    <section id="sakura-widget" class="fixed w-72 bg-rose-300/70 rounded-3xl shadow-lg p-6 z-50">
+    <section id="sakura-widget"
+        class="fixed inset-0 w-full h-full bg-rose-300/70 rounded-3xl shadow-lg p-5 text-[#6B5878]">
 
-        <h1>SAKURA CLUB ♡</h1>
+        <div id="petals"></div>
 
-        <p>桜の世界へ 🌸</p>
+        <header class="text-center mb-4">
 
-    <section> 
-         <h2>Date ♡</h2>
-         
-         <h2>Japanese saying🎋</h2>
-         <p id="meaning">Your Japanese saying will appear here.</p>
+            <h1 class="text-2xl font-serif font-bold tracking-wide">
+                SAKURA CLUB ♡
+            </h1>
 
-    </section>
-       
-    <section>
+            <p class="italic text-sm mt-1">
+                桜の世界へ 🌸
+            </p>
 
-        <h2>Pomodoro timer</h2>
-        <p id="timer">25:00</p>
-        <button id="timer-button">Start</button>
+            <img src="images/sakura.png"
+                 alt="Cherry blossoms"
+                 class="relative z-10 w-28 h-28 object-cover rounded-2xl mx-auto mb-3">
 
-    </section>
+        </header>
 
+
+        <section class="text-center mb-4">
+
+            <p class="text-xs uppercase tracking-widest opacity-70">
+                Today
+            </p>
+
+            <p id="date" class="font-serif text-lg">
+            </p>
+
+        </section>
+
+
+        <section class="bg-[#F8F1E7]/80 rounded-2xl p-3 mb-4 text-center">
+
+            <p class="text-xs uppercase tracking-widest opacity-70 mb-1">
+                Japanese saying 🎋
+            </p>
+
+            <p id="meaning" class="font-serif italic text-sm">
+                Your Japanese saying will appear here.
+            </p>
+
+        </section>
+
+
+        <section class="text-center">
+
+            <p class="text-xs uppercase tracking-widest opacity-70">
+                Pomodoro
+            </p>
+
+            <p id="timer" class="text-3xl font-serif font-bold my-2">
+                25:00
+            </p>
+
+        <button id="timer-button"
+            class="bg-[#6B5878] text-[#F8F1E7] px-5 py-2 rounded-full text-sm hover:opacity-90">
+            Start
+        </button>
+
+        </section>
 
     </section>
 
 </main>
 
 <script src="script.js"></script>
-
 
 </body>
 
