@@ -32,11 +32,6 @@
         transform: translateY(450px) translateX(-15px) rotate(360deg);
     }
 }
-
-.draggable {
-    -webkit-app-region: drag;
-}
-
-.non-draggable {
-    -webkit-app-region: no-drag;
+#sakura-widget {
+    background-color: rgba(244, 163, 184, 0.66);
 }
