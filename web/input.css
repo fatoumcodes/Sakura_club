@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source "./index.html";
 
 #petals {
     position: absolute;
@@ -31,7 +32,4 @@
     100% {
         transform: translateY(450px) translateX(-15px) rotate(360deg);
     }
-}
-#sakura-widget {
-    background-color: rgba(244, 163, 184, 0.66);
 }
