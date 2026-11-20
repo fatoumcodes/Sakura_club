@@ -81,3 +81,18 @@ for (let i = 0; i < 15; i++) {
 
     petals.appendChild(petal);
 }
+function updateGreeting() {
+    const hour = new Date().getHours();
+    const greeting = document.getElementById("greeting");
+
+    if (hour < 12) {
+        greeting.textContent = "Good morning ♡";
+    } else if (hour < 18) {
+        greeting.textContent = "Good afternoon ♡";
+    } else {
+        greeting.textContent = "Good evening ♡";
+    }
+}
+
+updateGreeting();
+setInterval(updateGreeting, 60000);
